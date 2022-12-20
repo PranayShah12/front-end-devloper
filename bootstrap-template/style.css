@@ -1,0 +1,219 @@
+#header-title .header-con {
+  background-color: #f45d01;
+}
+.header-nav .logo {
+  font-size: 30px;
+  color: black;
+  font-weight: 700;
+}
+.header-nav span {
+  color: #f45d01;
+}
+.header-nav .btn-ser {
+  border: none;
+  color: white;
+  width: 130px;
+  border-radius: 40px;
+  background-color: #2d7dd2;
+  height: 45px;
+}
+.header-nav li {
+  padding: 0px 10px;
+  font-weight: 700;
+}
+.header-nav a:hover {
+  color: #f45d01;
+}
+.btn-ser:hover {
+  background-color: #f45d01;
+}
+.carousel-item img {
+  position: relative;
+  filter: brightness(40%);
+}
+.carousel-item .content {
+  position: absolute;
+  top: 250px;
+  height: auto;
+  width: 50%;
+  color: white;
+  left: 180px;
+  padding: 30px;
+}
+.content p {
+  color: orangered;
+  font-size: 20px;
+  font-weight: 700;
+}
+.content h1 {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+.content .btn-read {
+  height: 40px;
+  width: 130px;
+  border: 2px solid white;
+  border-radius: 40px;
+  color: white;
+  font-weight: 600;
+}
+.content .btn-read:hover {
+  color: orangered;
+  background-color: white;
+}
+/* service info */
+.font-aw {
+  height: 40px;
+  width: 40px;
+}
+.best-qua:hover {
+  background-color: rgba(var(--bs-primary-rgb)) !important;
+  color: white !important;
+}
+.labour-enter:hover {
+  background-color: #2d7dd2 !important;
+  color: white !important;
+}
+/* service information */
+#service-info {
+  background-color: #eaf2fb;
+}
+/* about info */
+#About-com .title {
+  color: #f45d01;
+  font-weight: 600;
+}
+#About-com .head {
+  font-weight: 700;
+  font-size: 25px;
+}
+#About-com .btn-read {
+  height: 40px;
+  width: 120px;
+  background-color: #2d7dd2;
+  color: white;
+  border-radius: 40px;
+  font-weight: 700;
+}
+#About-com .btn-read:hover {
+  background-color: #f45d01;
+  transition: 1s all ease;
+}
+/* service information */
+.ser-work span {
+  font-size: 30px;
+  color: #f45d01;
+  padding-bottom: 15px;
+}
+.ser-work p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.ser-info:hover span {
+  color: #2d7dd2;
+}
+/* facility info */
+
+.facility-info span {
+  color: #2d7dd2;
+  font-size: 40px;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 10px;
+}
+.facility-info p {
+  text-align: center;
+  display: flex;
+}
+.facility-info h3 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+#fac-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.facility-info:hover {
+  border-color: #2d7dd2;
+  box-shadow: 0 40px 90px 0 rgb(0 0 0 / 12%);
+  border-bottom-style: solid;
+  background: rgba(255, 255, 255, 0.05);
+}
+/* Registration Info */
+#Reg-info .service-p-bg {
+  background-image: url(Images/banner4.jpg);
+  /* height: 550px; */
+  width: 100%;
+  z-index: 0;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.service-p-bg::before {
+  content: "";
+  background-color: rgba(6, 14, 21, 0.78);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#Reg-info span {
+  font-size: 25px;
+  color: #f45d01;
+  padding-bottom: 10px;
+}
+#Reg-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+#Reg-info h1 {
+  font-size: 50px;
+  padding-top: 30px;
+  color: white;
+}
+.reg-form1 {
+  background-color: white;
+  padding: 50px;
+}
+.reg-form .btn-start {
+  height: 40px;
+  color: white;
+  background-color: #f45d01;
+  border-radius: 40px;
+  margin-top: 40px;
+  font-weight: 700;
+}
+.service-p-info {
+  background-color: white;
+  text-align: center;
+  height: 170px;
+  padding: 30px;
+}
+/* Testimonials */
+
+.img-1 {
+  display: flex;
+}
+img {
+  height: 500px;
+  width: 1200px;
+}
+.right-img {
+  width: 50%;
+}
+.text {
+  width: 50%;
+  background-color: #007bff;
+}
+#testimonilas .row {
+  display: flex;
+  justify-content: center;
+}
+.slider-info {
+  border-radius: 10px;
+  border: none;
+}
