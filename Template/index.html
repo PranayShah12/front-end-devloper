@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap css  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- mediaquery css -->
+    <link rel="stylesheet" href="Mediaquery.css">
+    <!-- bxslider cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css"
+    />
+    <script>
+      $(function () {
+        $(".bxslider").bxSlider({
+          slideWidth: 900,
+          controls:true,
+        });
+      });
+    </script>
+    <script src="loginpage.js"></script>
+  </head>
+  <body>
+    <!-- header title -->
+    <section id="header-title">
+      <div class="header-con">
+        <div class="container container-lg container-md container-sm">
+          <div class="row p-3">
+            <div class="col-auto col-sm-12 col-md-12 col-lg-8 hide-con">
+              <div class="list-unstyled d-flex align-items-center">
+                <li class="p-2">
+                  <a href="" class="text-white text-decoration-none">
+                    <span class="fa-solid fa-clock"></span>
+                    Monday - Friday: 10:00 - 18:00
+                  </a>
+                </li>
+                <li class="p-2">
+                  <a href="" class="text-white text-decoration-none">
+                    <span class="fa-solid fa-envelope"></span>
+                    mail@company.com
+                  </a>
+                </li>
+                <li class="p-2">
+                  <a href="" class="text-white text-decoration-none">
+                    <span class="fa-solid fa-phone"></span>
+                    +142 5897555
+                  </a>
+                </li>
+              </div>
+            </div>
+            <div class="col-auto col-sm-12 col-md-12 col-lg-4">
+              <div
+                class="list-unstyled d-flex align-items-center justify-content-end"
+              >
+                <li class="p-2">
+                  <a href="" class="text-white">
+                    <span class="fa-brands fa-facebook-f"></span>
+                  </a>
+                </li>
+                <li class="p-2">
+                  <a href="" class="text-white">
+                    <span class="fa-brands fa-instagram"></span>
+                  </a>
+                </li>
+                <li class="p-2">
+                  <a href="" class="text-white">
+                    <span class="fa-brands fa-vimeo-v"></span>
+                  </a>
+                </li>
+                <li class="p-2">
+                  <a href="" class="text-white">
+                    <span class="fa-brands fa-linkedin-in"></span>
+                  </a>
+                </li>
+                <li class="p-3">
+                 <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"> 
+                <span class="fa-solid fa-magnifying-glass text-white" ></span>
+              </a>
+              <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+             <div class="offcanvas-header">
+             <h3 class="offcanvas-title text-white" id="offcanvasTopLabel">Search here</h3>
+             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+             </div>
+              <div class="offcanvas-body offcanvas-sm offcanvas-md offcanvas-lg offcanvas-xl">
+                <form action="" class="d-flex justify-content-center">
+                  <div class="input-group text-center col-12" style="width: 50%;">
+                <input type="text" name="" id="" class=" form-control">
+                <label for="" class="input-group-text">Search</label>
+              </div>
+              </form>
+              </div>
+              </div>
+            
+              </li>
+                <li class="p-2">
+                <button class="btn btn-ser-login btn-outline-success" style="border: 2px solid green;"  type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  login
+                </button>
+              </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg header-nav">
+      <div class="container">
+        <a class="navbar-brand logo" href="#">Clean<span>Freshly</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-100">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="color: #f45d01;">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="color: #f45d01;"
+              >
+                Blog
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">Blog single</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Landing Page</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <button class="btn btn-ser btn-outline-success"  type="submit" data-bs-toggle="modal" data-bs-target="#registrationModal">
+              Register
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- owl carousel bootstrap -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Images/banner1.jpg" class="d-block w-100 img-fluid" alt="...">
+          <div class="content">
+            <p>Fast and Efficient</p>
+            <h1>Heating, Coolling and plumbing services</h1>
+            <button class="btn btn-read">Read More</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Images/banner2.jpg" class="d-block w-100 img-fluid" alt="...">
+          <div class="content">
+            <p>Fast and Efficient</p>
+            <h1>Quality Service for Quality Homes</h1>
+            <button class="btn btn-read">Read More</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Images/banner3.jpg" class="d-block w-100 img-fluid" alt="...">
+          <div class="content">
+            <p>Fast and Efficient</p>
+            <h1>The Superier Choice for Commercial cleaning</h1>
+            <button class="btn btn-read">Read more</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- carousel Information -->
+    <div class="caro-infor">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-4 col-md-12 col-sm-12 col-auto p-5 bg-white best-qua">
+            <div class="font-aw bg-primary text-white mx-auto rounded-5 pt-3 ">
+              <span class="fa-solid fa-bath"></span>
+            </div>
+            <h4 class="pt-2">
+              <a href="" class="text-black" style="text-decoration: none;">Best Quality</a>
+            </h4>
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              beatae aut nihil architecto magni
+            </p>
+          </div>
+          <div
+            class="col-lg-4 col-md-12 col-sm-12 col-auto p-5 bg-primary exper-ad"
+          >
+            <div class="font-aw bg-white text-primary mx-auto rounded-5 pt-3">
+              <span class="fa-solid fa-gears"></span>
+            </div>
+            <h4 class="pt-2">
+              <a href="" class="text-white"style="text-decoration: none;" >Expert Advise</a>
+            </h4>
+            <p class="text-white pt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              beatae aut nihil architecto magni
+            </p>
+          </div>
+          <div
+            class="col-lg-4 col-md-12 col-sm-12 col-auto p-5 bg-white labour-enter"
+          >
+            <div class="font-aw bg-primary text-white mx-auto rounded-5 pt-3">
+              <span class="fa-solid fa-users"></span>
+            </div>
+            <h4 class="pt-2">
+              <a href="" class="text-black"style="text-decoration: none;">Labour Enterprise</a>
+            </h4>
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              beatae aut nihil architecto magni
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Info -->
+    <section id="About-com" class="pb-5">
+      <div class="container pt-5">
+        <div class="row p-2">
+          <div class="col-sm-12 col-md-12 col-lg-6 col-auto">
+            <img src="Images/ab1.jpg" class="img-fluid " alt="">
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6 col-auto ">
+            <p class="title pt-4">WELCOME TO OUR CLEANFRESHLY</p>
+            <h1 class="head pb-3">About Our Company</h1>
+            <p class="pb-4">Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum fringilla, gravida felis vitae. Phasellus lacinia id, sunt in culpa quis. Phasellus lacinia <br><br>
+
+              Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper.Nunc id ipsum fringilla, gravida felis vitae. Phasellus lacinia id, sunt in culpa quis. Phasellus lacinia</p>
+              <button class="btn btn-read">Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services information  -->
+    <section id="service-info" class="pt-5">
+    <div class="container ">
+      <div class="row pt-5 ">
+        <div class="col-sm-12 col-lg-4 col-md-4 pb-5">
+          <h1>We Providing A High Quality Services</h1>
+        </div>
+        <div class="col-sm-12 col-lg-4 col-md-4 text-muted pb-5">
+          <p>Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elitFuga, suscipit totam animi consequatur saepe blanditiis.Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elit. Fuga, suscipit totam animi consequatur saepe blanditiis.</p>
+        </div>
+        <div class="col-sm-12 col-lg-4 col-md-4 text-muted pb-5">
+          <p>Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elitFuga, suscipit totam animi consequatur saepe blanditiis.Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elit. Fuga, suscipit totam animi consequatur saepe blanditiis.</p>
+        </div>
+        <hr>
+        <div class="ser-work pt-5 pb-5">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+              <div class="ser-info">
+          <span class="fa-solid fa-plug"></span>
+          <p>Electric Work</p>
+        </div>
+      </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+            <div class="ser-info">
+          <span class="fa-solid fa-paintbrush"></span>
+          <p>Painting Work</p>
+        </div>
+      </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+            <div class="ser-info">
+          <span class="fa-solid fa-bed"></span>
+          <p>Furniture Shifting</p>
+      </div>
+    </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+            <div class="ser-info">
+          <span class="fa-solid fa-shield-halved"></span>
+          <p>Washing Machine</p>
+        </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+            <div class="ser-info">
+          <span class="fa-solid fa-paragraph"></span>
+          <p>Modular Kitchen</p>
+        </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+            <div class="ser-info">
+          <span class="fa-solid fa-unlink"></span>
+          <p>Carpet Cleaning</p>
+            </div>
+        </div>
+      </div>
+  </div>
+    </section>
+    <!-- facility info -->
+    <section id="fac-info">
+      <div class="fac-info">
+      <div class="container pt-5 pb-5">
+        <div class="fac-detail">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="facility-info p-5">
+              <span class="fa-solid fa-bath"></span>
+              <h3>Plumbing</h3>
+              <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur.</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="facility-info p-5">
+              <span class="fa-solid fa-hands-asl-interpreting"></span>
+              <h3>Repairs</h3>
+              <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur.</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="facility-info p-5">
+              <span class="fa-solid fa-fire-extinguisher"></span>
+              <h3>Spring</h3>
+              <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur.</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="facility-info p-5">
+              <span class="fa-solid fa-bath"></span>
+              <h3>Carpenter</h3>
+              <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </section>
+    <!-- Registration info -->
+    <section id="Reg-info" class="pb-5">
+      <div class="service-p-bg">
+        <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-8">
+                <h1 class="pb-3 pt-5">Professional Cleaning<br>
+                  Services Provider</h1>
+                  <p class="pb-5 text-white">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br>sed deserunt mollit anim id est laborum mollit anim id est nulla.</p>
+            <div class="row">
+              <div class="col-sm-4 col-md-6 col-lg-4 text-black p-3 ">
+                <div class="service-p-info rounded-3">
+                <span class="fa-solid fa-phone"></span>
+                <h3>Phone</h3>
+                <p>+142 5897555</p>
+              </div>
+            </div>
+              <div class="col-sm-4 col-md-6 col-lg-4 text-black p-3 ">
+                <div class="service-p-info rounded-3">
+                <span class="fa-solid fa-envelope"></span>
+                <h3>Email</h3>
+                <p>mail@company.com</p>
+              </div>
+            </div>
+              <div class="col-sm-4 col-md-6 col-lg-4 text-black p-3 ">
+                <div class="service-p-info rounded-3" >
+                <span class="fa-solid fa-clock"></span>
+                <h3>Opening hours</h3>
+                <p>10.00 to 18.00</p>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-4 px-4 py-5">
+            <div class="reg-form1 rounded-3">
+            <form action="">
+              <div class="container reg-form ">
+                <label for="" class="form-label pb-2">First Name</label>
+                <div class="row">
+                  <div class="col-sm-7 col-md-7 col-lg-12 w-100">
+              <input type="text" class="form-control pb-2 rounded-5">
+            </div>
+          </div>
+              <label for="" class="form-label pb-2 pt-2">Last Name</label>
+              <div class="row">
+                <div class="col-sm-7 col-md-7 col-lg-12 w-100">
+              <input type="text" class="form-control rounded-5">
+            </div>
+          </div>
+              <label for="" class="form-label pb-2 pt-2">Password</label>
+              <div class="row">
+                <div class="col-sm-7 col-md-7 col-lg-12 w-100">
+              <input type="password" class="form-control rounded-5">
+            </div>
+          </div>
+              <button class="btn btn-start w-100">Get Started</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+    </div>
+    </section>
+    <!-- testimonials -->
+    <section id="testimonilas">
+      <div class="container">
+        <div class="test-info text-center">
+          <h5 style="color: #f45d01;">TESTIMONIALS</h5>
+          <h1 style="font-weight: 700;">What Our Clients Say</h1>
+          <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque in facere cupiditate esse a quas vitae. Similique veritatis perferendis, deserunt quam reprehenderit itaque ea sequi nobis pariatur animi aperiam ab?</p>
+        </div>
+      </div>
+        <!-- carousel for testimonials -->
+    <div class="container ">
+      <div class="row">
+      <div class="bxslider mx-auto slider-info">
+        <div class="img-1">
+          <div class="text"><p class="pt-5 ps-5 sm-pt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, culpa nulla? Blanditiis ipsum magnam illo, obcaecati, dolor pariatur quidem officiis rerum repudiandae autem fugiat aliquid maxime facere! Nisi, commodi voluptate!</p>
+          <h3 class="ps-5" style="color: yellow;">Luke jacobes</h3>
+          <h6 class="ps-5 sm-pb-2">Example Company</h6>
+          </div>
+          <div class="right-img">
+            <img src="Images/t1.jpg" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div class="img-1">
+          <div class="text">
+            <p class="pt-5 ps-5 sm-pt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, culpa nulla? Blanditiis ipsum magnam illo, obcaecati, dolor pariatur quidem officiis rerum repudiandae autem fugiat aliquid maxime facere! Nisi, commodi voluptate!</p>
+          <h3 class="ps-5" style="color: yellow;">Sara Grant</h3>
+          <h6 class="ps-5">Example Company</h6>
+          </div>
+          <div class="right-img">
+            <img src="Images/t2.jpg" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div class="img-1">
+          <div class="text">
+            <p class="ps-5 pt-5 sm-pt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, culpa nulla? Blanditiis ipsum magnam illo, obcaecati, dolor pariatur quidem officiis rerum repudiandae autem fugiat aliquid maxime facere! Nisi, commodi voluptate!</p>
+          <h3 class="ps-5" style="color: yellow;">luke osmos</h3>
+          <h6 class="ps-5">Example Company</h6>
+          </div>
+          <div class="right-img">
+            <img src="Images/t3.jpg" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div class="img-1">
+          <div class="text">
+            <p class="ps-5 pt-5 sm-pt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, culpa nulla? Blanditiis ipsum magnam illo, obcaecati, dolor pariatur quidem officiis rerum repudiandae autem fugiat aliquid maxime facere! Nisi, commodi voluptate!</p>
+          <h3 class="ps-5" style="color: yellow;">Rekha sana</h3>
+          <h6 class="ps-5">Example Company</h6>
+          </div>
+          <div class="right-img">
+            <img src="Images/t4.jpg" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    <!-- footer section -->
+    <section id="footer">
+      <div class="footer-main">
+      <div class="container">
+        <div class="row pt-4">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-auto">
+            <h3>Clean<span>Freshly</span></h3>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-auto">
+            <div
+            class="list-unstyled d-flex justify-content-end"
+          >
+            <li class="p-2">
+              <a href="" class="text-white">
+                <span class="fa-brands fa-facebook-f"></span>
+              </a>
+            </li>
+            <li class="p-2">
+              <a href="" class="text-white">
+                <span class="fa-brands fa-instagram"></span>
+              </a>
+            </li>
+            <li class="p-2">
+              <a href="" class="text-white">
+                <span class="fa-brands fa-vimeo-v"></span>
+              </a>
+            </li>
+            <li class="p-2">
+              <a href="" class="text-white">
+                <span class="fa-brands fa-linkedin-in"></span>
+              </a>
+            </li>
+            <li class="p-2">
+              <a href="" class="text-white">
+                <span class="fa-brands fa-twitter"></span>
+              </a>
+            </li>
+          </div>
+        </div>
+        </div>
+        <hr style="color: white;"/>
+        <div class="row footer-info">
+          <div class="col-sm-12 col-lg-2 col-md-4 p-2 ">
+            <h4>Extra Links</h4>
+            <p><a href="">About Company</a></p>
+            <p><a href="">Our Services</a></p>
+            <p><a href="">Recent Projects List</a></p>
+            <p><a href="">Latest News Blog</a></p>
+          </div>
+          <div class="col-sm-12 col-lg-2 col-md-4 p-2 ">
+            <h4>List Of Services</h4>
+            <p><a href="">Plumbing</a></p>
+            <p><a href="">Electrician</a></p>
+            <p><a href="">Furniture Moving</a></p>
+            <p><a href="">Replacing Wires</a></p>
+          </div>
+          <div class="col-sm-12 col-lg-2 col-md-4 p-2 ">
+            <h4>Extra Links</h4>
+            <p><a href="">Carpenter</a></p>
+            <p><a href="">Wall Painting</a></p>
+            <p><a href="">House Cleaning</a></p>
+            <p><a href="">AC & Refrigerator</a></p>
+          </div>
+          <div class="col-sm-12 col-lg-2 col-md-4 p-2 ">
+            <h4>Support</h4>
+            <p><a href="">Documentation</a></p>
+            <p><a href="">Privacy Policy</a></p>
+            <p><a href="">Terms Of Service</a></p>
+            <p><a href="">24/7 Support</a></p>
+          </div>
+          <div class="col-sm-12 col-lg-2 col-md-4 p-2 ">
+            <h4>Working Hours</h4>
+            <p><a href="">Monday : 8AM - 6AM</a></p>
+            <p><a href="">Tuesday : 8AM - 6AM</a></p>
+            <p><a href="">Wednesday : 8AM - 6AM</a></p>
+            <p><a href="">Thursday - Friday : 8AM - 6AM</a></p>
+            <p><a href="">Sunday : Closed</a></p>
+          </div>
+        </div>
+      </div> 
+       <hr style="color: white;"> 
+       <p class="text-center p-3"style="color:gray;">© 2020 Cleanfreshly. All rights reserved | Designed by W3layouts</p>  
+    </div>
+        </div>
+        </div>
+      </div>
+    </section>
+<!-- Registration Modal -->
+<div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-sm modal-xl modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Registration Page</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h1>Registration Form</h1>
+
+        <!-- row for name -->
+        <form action="" name="form2" method="post" onsubmit="return form_valid()">
+        <div class="row">
+          <div class="col-auto col-sm-12 col-md-6 col-lg-4">
+            <label for="" class="form-label">Full Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-auto col-sm-12 col-md-6 col-lg-4 p-1">
+            <input
+              type="text"
+              name="fname"
+              id=""
+              class="form-control"
+              placeholder="First name"
+            />
+          </div>
+          <span id="mss1" style="color: red;"></span>
+          <span id="mssg1" style="color: red;"></span>
+          <div class="col-auto col-sm-12 col-md-6 col-lg-4 p-1">
+            <input type="text" class="form-control" name="mname" placeholder="Middle name" />
+          </div>
+          <span id="mss2" style="color: red;"></span>
+          <div class="col-auto col-sm-12 col-md-6 col-lg-4 p-1">
+            <input
+              type="text"
+              name="lname"
+              id=""
+              class="form-control"
+              placeholder="Last name"
+            />
+          </div>
+        </div>
+        <span id="mss3" style="color: red;"></span>
+        <!-- gender -->
+        <div class="row">
+          <div class="col-auto">
+            <label for="" class="form-label">Gender</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-auto">
+            <div class="form-check-inline">
+              <input type="radio" name="gen" id="" class="form-check-input" />
+              <label for="" class="form-check-label">Male</label>
+            </div>
+            <div class="form-check-inline">
+              <input type="radio" name="gen" id="" class="form-check-input" />
+              <label for="" class="form-check-label">Female</label>
+            </div>
+          </div>
+        </div>
+        <span id="mss4" style="color: red;"></span>
+        <!-- qualification -->
+        <div class="row">
+          <div class="col-auto">
+            <label for="">Qualification </label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-auto">
+            <div class="form-check-inline">
+              <input type="checkbox" name="c1" id="" class="form-check-input" />
+              <label for="" class="form-check-label">10th</label>
+            </div>
+            <div class="form-check-inline">
+              <input type="checkbox" name="c2" id="" class="form-check-input" />
+              <label for="" class="form-check-label">12th</label>
+            </div>
+            <div class="form-check-inline">
+              <input type="checkbox" name="c3" id="" class="form-check-input" />
+              <label for="" class="form-check-label">Bachlor</label>
+            </div>
+          </div>
+        </div>
+        <span id="mss5" style="color: red;"></span>
+        <!-- address labels -->
+        <div class="row">
+          <div class="col-lg-3 col-sm-12 col-md-6 col-auto p-1">
+            <label for="" class="form-label">State</label>
+            <select name="state" id="" class="form-select">
+              <option value="-1">---select---</option>
+              <option value="0">Gujarat</option>
+              <option value="1">Rajasthan</option>
+            </select>
+          </div>
+          <span id="mss6" style="color: red;"></span>
+          <div class="col-lg-3 col-sm-12 col-md-6 col-auto p-1">
+            <label for="" class="form-label">City</label>
+            <select name="city" id="" class="form-select">
+              <option value="-1">---select---</option>
+              <option value="">Surat</option>
+              <option value="">Baroda</option>
+            </select>
+          </div>
+          <span id="mss7" style="color: red;"></span>
+          <div class="col-lg-2 col-sm-12 col-md-6 col-auto p-1">
+            <label for="" class="form-label">pincode</label>
+            <input
+              type="text"
+              name="pin"
+              id=""
+              class="form-control"
+              maxlength="6"
+              placeholder="000000"
+            />
+          </div>
+          <span id="mss8" style="color: red;"></span>
+          <span id="mss9" style="color: red;"></span>
+          <div class="col-lg-4 col-sm-12 col-md-6 col-auto p-1">
+            <label for="" class="form-label">Address</label>
+            <textarea
+              name="add"
+              id=""
+              cols="30"
+              rows="4"
+              class="form-control"
+            ></textarea>
+          </div>
+        </div>
+        <span id="mss10" style="color: red;"></span>
+        <!-- email - password -->
+        <div class="row">
+          <div class="col-lg-1 col-md-6 col-sm-12 col-auto p-1">
+            <label for="" class="form-label" name="username">Email</label>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-12 col-auto p-1">
+            <div class="input-group">
+              <input
+                type="text"
+                name="email"
+                id=""
+                class="form-control"
+                placeholder="Enter only username"
+              />
+              <label for="" class="input-group-text">@gmail.com</label>
+            </div>
+          </div>
+        </div>
+        <span id="mss11" style="color: red;"></span>
+        <div class="row">
+          <div class="col-lg-1 col-md-6 col-sm-12 col-auto p-1">
+            <label for="" class="form-label">Password</label>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-12 col-auto p-1">
+            <input type="password" name="pass2" id="" class="form-control" />
+          </div>
+        </div>
+        <span id="mss12" style="color: red;"></span>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-success">Register</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+
+<!-- login modal -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-xl modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Login Page</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h1>Login</h1>
+      <form action=""name="form1" onsubmit="return check_login()">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-auto py-2">
+            <input
+              type="text"
+              name="username"
+              id=""
+              class="form-control"
+              placeholder="Enter username or email"
+            />
+          </div>
+          <span id="msg1" style="color: red;"></span>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-auto py-2">
+            <input
+              type="password"
+              name="pass"
+              id="pwd"
+              class="form-control"
+              placeholder="Enter Password"
+            />
+          </div>
+          <span id="msg2" style="color: red;"></span>
+          <span id="msg3" style="color: red;"></span>
+        </div>
+        <div class="row">
+          <div class="col-auto">
+            <div class="form-check">
+              <input type="checkbox" name="" id="" onclick="hide_show_pass()" class="form-check-input" />
+              <label for="" class="form-label" >Show Password</label>
+              <span id="msg3" style="color: red;"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-success">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
