@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import UncontrolledExample from "./Components/carousel";
+import Comments from "./Components/Comments";
 import Header from "./Components/Header";
 import Main from "./Components/Main";
 
@@ -9,5 +9,6 @@ root.render(
   <>
     <Header />
     <Main />
+    <Comments />
   </>
 );

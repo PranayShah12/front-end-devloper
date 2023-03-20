@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import img4 from "./images/infoimg.jpg";
 import img5 from "./images/proimg2.jpg";
 import img6 from "./images/proimg3.jpg";
@@ -9,77 +9,64 @@ export default function Main() {
   return (
     <>
       <div className="container">
-        <div className="image">
-          <img
-            className="imgstart"
-            src={img4}
-            alt=""
-            height="400px"
-            width="500px"
-          ></img>
-        </div>
-        <div className="info">
-          <h1>
-            Perfect Jewellery <br />
-            For You
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor
-            sit amet
-          </p>
-          <button>read more</button>
+        <div className="row">
+          <div className="image col-lg-6 col-md-6 col-sm-12 ">
+            <img
+              className="imgstart img-fluid"
+              src={img4}
+              alt=""
+              height="400px"
+              width="500px"
+            ></img>
+          </div>
+          <div className="info col-lg-6 col-md-6 col-sm-12">
+            <h1>
+              Perfect Jewellery <br />
+              For You
+            </h1>
+            <p className="imginfo">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              Lorem ipsum dolor sit amet
+            </p>
+            <button>read more</button>
+          </div>
         </div>
       </div>
-      <section className="gallary">
-        <div className="proinfo">
-          <div className="image1 ">
-            <img src={img5} alt=""></img>
-            <div className="imgHeading">
-              <h1>hello</h1>
-            </div>
-          </div>
-          <div className="gallaryimg">
-            <img src={img6} alt=""></img>
-            <div className="imgHeading">
-              <h1>hello</h1>
-            </div>
-          </div>
-          <div className="gallaryimg">
-            <img src={img7} alt=""></img>
-            <div className="imgHeading">
-              <h1>hello</h1>
-            </div>
-          </div>
-          <div className="gallaryimg">
-            <img src={img8} alt=""></img>
-            <div className="imgHeading">
-              <h1>hello</h1>
-            </div>
-          </div>
+      <section className="gallary conatainer-fluid  my-5">
+        <div>
+          <h1 className="head pt-5">Our Metals</h1>
         </div>
-      </section>
-      <section className="review">
-        <div className="review-main">
-          <div className="name">
-            <h1>j p jewellers</h1>
-          </div>
-          {/* <div className="slider-main"> */}
-          <div class="bxslider1">
-            <div>
-              <h1>how r u?</h1>
-            </div>
-            <div>
-              <h1>how r u?</h1>
-            </div>
-            <div>
-              <h1>how r u?</h1>
+        <div className="container">
+        <div className="proinfo row">
+          <div className="gallaryimg col-lg-3 col-md-6 col-sm-12">
+            <img src={img5} alt="" className="img-fluid"></img>
+            <div className="imgHeading">
+              <h1>Gold</h1>
             </div>
           </div>
-        </div>
-        {/* </div> */}
+          <div className="gallaryimg col-lg-3 col-md-6 col-sm-12">
+            <img src={img6} alt="" className="img-fluid"></img>
+            <div className="imgHeading">
+              <h1>Diamond</h1>
+            </div>
+          </div>
+          <div className="gallaryimg col-lg-3 col-md-6 col-sm-12">
+            <img src={img7} alt="" className="img-fluid"></img>
+            <div className="imgHeading">
+              <h1>Stone</h1>
+            </div>
+          </div>
+          <div className="gallaryimg col-lg-3 col-md-6 col-sm-12">
+            <img src={img8} alt="" className="img-fluid"></img>
+            <div className="imgHeading">
+              <h1>RoseGold</h1>
+            </div>
+          </div>
+          </div>
+          </div>
       </section>
     </>
   );
-}
+} 
